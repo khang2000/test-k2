@@ -1,38 +1,81 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 30%;
   text-align: center;
+  margin: 30px auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+nav .navbar-brand {
+  column-gap: 20px;
+  color: black;
+  text-decoration: none;
+}
+nav .navbar-brand:hover {
+  z-index: 10;
+  border-bottom-color: blueviolet;
+}
+.form {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.form input {
+  width: 85%;
+  height: 40px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  padding-left: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form button {
+  width: 60px;
+  background-color: blueviolet;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+}
+.list {
+  margin-top: 20px;
+  width: 100%;
+  padding: 5px 10px;
+}
+.item {
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+}
+.item .input-left {
+  display: flex;
+  justify-content: center;
+  column-gap: 2px;
+  align-items: center;
+}
+.button-right {
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
+  align-items: center;
+}
+.delete-all {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 115, 0);
+  width: 100px;
+  height: 35px;
+  padding: auto;
+  color: aliceblue;
 }
